@@ -8,7 +8,7 @@ const TropaTable = ({ guerreros, eliminarGuerrero }) => {
         <Table>
 
             <TableHead>
-
+                {/* campos de tabla */}
                 <TableRow>
 
                     <TableCell>Nombre del Guerrero</TableCell>
@@ -25,6 +25,7 @@ const TropaTable = ({ guerreros, eliminarGuerrero }) => {
 
             <TableBody>
 
+                {/* mapeo de guerreros para sacarles info */}
                 {guerreros.map((guerrero, index) => (
 
                     <TableRow key={index}>
@@ -48,6 +49,7 @@ const TropaTable = ({ guerreros, eliminarGuerrero }) => {
 
                         <TableCell>
 
+                            {/* boton para eliminar*/}
                             <Button variant="contained" color="error" onClick={() => eliminarGuerrero(index)}>
                                 Asesinado por la aparicion
                             </Button>

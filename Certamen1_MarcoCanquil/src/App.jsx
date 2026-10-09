@@ -8,7 +8,7 @@ function App() {
     return (
 
         <div>
-
+            {/* creo la navbar */}
             <AppBar position="static" sx={{ backgroundColor: "black" }}>
 
                 <Toolbar>

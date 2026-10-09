@@ -8,14 +8,14 @@ const EjercitoContainer = () => {
 
     const [guerreros, setGuerreros] = useState([]);
 
-    // funcion para agregar
+    {/* funcion para agregar */}
     const agregarGuerrero = (nuevoGuerrero) => {
 
         setGuerreros([...guerreros, nuevoGuerrero]);
 
     };
 
-    // funcion parea elminar
+    {/* funcion para eliminar */}
     const eliminarGuerrero = (indexEliminar) => {
 
         const nuevaLista = guerreros.filter((guerrero, index) => index !== indexEliminar);
